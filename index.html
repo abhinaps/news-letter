@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Newsletter</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #f5f5f5;
+    }
+
+    .form-signin {
+      width: 100%;
+      max-width: 330px;
+      padding: 15px;
+      margin: auto;
+    }
+
+    .form-signin .checkbox {
+      font-weight: 400;
+    }
+
+    .form-signin .form-floating:focus-within {
+      z-index: 2;
+    }
+
+    .top{
+      margin-bottom: -1px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      vertical-align: middle;
+      padding: 10px
+    }
+
+    .middle{
+      margin-bottom: -1px;
+      border-radius: 0;
+      vertical-align: middle;
+      padding: 10px
+    }
+
+    .bottom{
+      margin-bottom: 10px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      vertical-align: middle;
+      padding: 10px
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="public/styles.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+
+  <main class="form-signin">
+    <form action="/" method="post">
+      <img class="mb-4"
+        src="data:image/png;base64,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"
+        alt="" width="72" height="57">
+      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+      <input type="text" name="fname" class="form-control top" placeholder="Frist Name">
+      <input type="text" name="lname" class="form-control middle" placeholder="Second Name">
+      <input type="email" name="email" class="form-control bottom" placeholder="Email">
+
+
+      <div>
+
+      </div>
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign Up</button>
+      <p class="mt-5 mb-3 text-muted">&copy; Abhinap Singh</p>
+    </form>
+  </main>
+
+
+
+</body>
+
+</html>
